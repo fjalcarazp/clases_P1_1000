@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta a papá Noel</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <h1 class="text-right">Carta para Papá Noel...</h1>
+
+    <form id="formulario" action="#" method="get">
+
+    <!--nombre con lista...-->
+        <div class="bloque margin-bot"> 
+            <label for="nombre" class="ancho-label">Nombre:</label>
+            <input list="listaNombre" name="nombre" id="nombre" placeholder="Escribe tu nombre..."/>
+            <datalist id="listaNombre">
+                <option label="Fran" value="Fran">
+                <option label="Mario" value="Mario">
+                <option label="Marcos" value="Marcos">
+            </datalist>
+        </div>
+
+
+
+    <!-- apellidos-->
+        <div class="bloque margin-bot">
+            <label for="apellidos" class="ancho-label">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="escribe tus apellidos..."/>
+        </div>
+    
+
+
+    <!-- genero -->
+        <div class="bloque margin-bot">
+            <p>Género:</p>
+
+            <input type="radio" id="nina" name="genero" value="nina" checked>
+            <label for="nina">Niña</label>
+  
+            <input type="radio" id="nino" name="genero" value="nino">
+            <label for="nino">Niño</label>
+  
+            <input type="radio" id="noBinario" name="genero" value="noBinario">
+            <label for="noBinario">No binario</label>
+        </div>
+
+
+
+    <!-- email -->
+        <div class="bloque margin-bot">
+            <label for="email" class="ancho-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email..." required/>
+        </div>
+
+
+
+    <!-- telefono -->
+        <div class="bloque margin-bot">
+            <label for="telefono" class="ancho-label">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+
+
+
+    <!-- Slider controls -->
+        <div class="bloque margin-bot">
+            <label for="bondad" class="bloque">¿Cómo de bien te portaste este año? </label>
+            <input type="range" name="bondad" id="bondad" min="0" max="100" step="1" value="0">
+            <output class="bondad-output" for="bondad"></output>
+        </div>
+
+
+
+    <!-- The output element -->
+        <div class="bloque margin-bot">
+            <label for="rangoDinero" class="bloque">¿Cuánto dinero se debería gastar Papá Noel?</label>
+            <input type="range" id="rangoDinero" value="0">
+            +<input type="number" id="dineroMin" class="min-width" value="2" readonly>
+            =<output name="dineroFin" id="dineroFin" for="rangoDinero dineroMin"></output>
+        </div>
+
+    <!-- Select -->
+        <div class="bloque margin-bot">
+            <label for="tipoRegalo">Tipo de regalo:</label>
+            <select name="tipoRegalo" id="tipoRegalo">
+                <option value="juguete" selected>Juguete</option> 
+                <option value="golosinas">Golosinas</option>
+                <option value="deseo">Deseo</option>
+            </select>
+
+        </div>
+
+
+
+    <!-- textarea -->
+        <div class="bloque margin-bot">
+            <label for="textarea">Texto de la carta:</label> <br>
+            <textarea id="textarea" name="textarea" rows="10" cols="50" placeholder="Escribe tu carta..." autofocus></textarea>
+        </div>
+
+    <!-- submit-->
+        <div class="text-right">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <script src="js/myFunctions.js"></script>
+
+</body>
+</html>

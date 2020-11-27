@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+input, select, textarea{
+    border: 1px solid black;
+}
+
+input{
+    font-size: 1rem;
+}
+
+.text-right{
+    text-align: right;
+}
+
+h1{
+    margin-right: 5rem;
+}
+
+body{
+    padding: 2rem;
+    font-weight: bold;
+    background-image: url("../img/regalitos-navidad.jpg");
+    background-position-x: 35rem;
+}
+
+
+.bloque{
+    display: block;
+}
+
+.ancho-label{
+    display: inline-block;
+    width: 5rem;
+}
+
+.margin-bot{
+    margin-bottom: 1rem;
+}
+
+.min-width{
+    width: 2rem;
+}
+
+input[type=submit]{
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    font-size: 2.5rem;
+    transition:2s;
+}
