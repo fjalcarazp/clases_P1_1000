@@ -20,7 +20,7 @@ while (year > 1990) {
 
     console.log(`Estamos en el año ${year}`);
     
-    year--
+    year--;
     //year = year-1;
 }
 */
