@@ -4,7 +4,7 @@ let user1 = {
     "varias palabras": true
 };
 
-user.name = "Francisco Javier";
+user.name = "Ana";
 user ["varias palabras"];
 
 delete user.name;
@@ -14,3 +14,4 @@ let checkKey = "name" in user;
 for(key in user){
     user[key];
 }
+
